@@ -171,7 +171,7 @@ The active scheduler's ready queue is drained and handed off to the new schedule
 
 ```bash
 git clone <repo_url>
-cd AdaptiveSched++
+cd AdaptiveSched
 
 mkdir build && cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
