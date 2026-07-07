@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: Project
+# Project: AdaptiveSchedPP
 # Configurations: Debug
 # =============================================================================
 
@@ -40,6 +40,207 @@ include CMakeFiles/rules.ninja
 # Logical path to working directory; prefix for absolute paths.
 
 cmake_ninja_workdir = C$:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/build/
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target adaptive_sched_lib
+
+
+#############################################
+# Order-only phony target for adaptive_sched_lib
+
+build cmake_object_order_depends_target_adaptive_sched_lib: phony || .
+
+build CMakeFiles/adaptive_sched_lib.dir/src/core/clock.cpp.obj: CXX_COMPILER__adaptive_sched_lib_unscanned_Debug C$:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/src/core/clock.cpp || cmake_object_order_depends_target_adaptive_sched_lib
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\adaptive_sched_lib.dir\src\core\clock.cpp.obj.d
+  FLAGS = -g -std=c++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -g -O0 -fsanitize=address,undefined
+  INCLUDES = -IC:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/include
+  OBJECT_DIR = CMakeFiles\adaptive_sched_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\adaptive_sched_lib.dir\src\core
+  TARGET_SUPPORT_DIR = CMakeFiles\adaptive_sched_lib.dir
+
+build CMakeFiles/adaptive_sched_lib.dir/src/core/process.cpp.obj: CXX_COMPILER__adaptive_sched_lib_unscanned_Debug C$:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/src/core/process.cpp || cmake_object_order_depends_target_adaptive_sched_lib
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\adaptive_sched_lib.dir\src\core\process.cpp.obj.d
+  FLAGS = -g -std=c++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -g -O0 -fsanitize=address,undefined
+  INCLUDES = -IC:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/include
+  OBJECT_DIR = CMakeFiles\adaptive_sched_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\adaptive_sched_lib.dir\src\core
+  TARGET_SUPPORT_DIR = CMakeFiles\adaptive_sched_lib.dir
+
+build CMakeFiles/adaptive_sched_lib.dir/src/core/ready_queue.cpp.obj: CXX_COMPILER__adaptive_sched_lib_unscanned_Debug C$:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/src/core/ready_queue.cpp || cmake_object_order_depends_target_adaptive_sched_lib
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\adaptive_sched_lib.dir\src\core\ready_queue.cpp.obj.d
+  FLAGS = -g -std=c++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -g -O0 -fsanitize=address,undefined
+  INCLUDES = -IC:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/include
+  OBJECT_DIR = CMakeFiles\adaptive_sched_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\adaptive_sched_lib.dir\src\core
+  TARGET_SUPPORT_DIR = CMakeFiles\adaptive_sched_lib.dir
+
+build CMakeFiles/adaptive_sched_lib.dir/src/scheduler/scheduler.cpp.obj: CXX_COMPILER__adaptive_sched_lib_unscanned_Debug C$:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/src/scheduler/scheduler.cpp || cmake_object_order_depends_target_adaptive_sched_lib
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\adaptive_sched_lib.dir\src\scheduler\scheduler.cpp.obj.d
+  FLAGS = -g -std=c++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -g -O0 -fsanitize=address,undefined
+  INCLUDES = -IC:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/include
+  OBJECT_DIR = CMakeFiles\adaptive_sched_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\adaptive_sched_lib.dir\src\scheduler
+  TARGET_SUPPORT_DIR = CMakeFiles\adaptive_sched_lib.dir
+
+build CMakeFiles/adaptive_sched_lib.dir/src/scheduler/fcfs.cpp.obj: CXX_COMPILER__adaptive_sched_lib_unscanned_Debug C$:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/src/scheduler/fcfs.cpp || cmake_object_order_depends_target_adaptive_sched_lib
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\adaptive_sched_lib.dir\src\scheduler\fcfs.cpp.obj.d
+  FLAGS = -g -std=c++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -g -O0 -fsanitize=address,undefined
+  INCLUDES = -IC:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/include
+  OBJECT_DIR = CMakeFiles\adaptive_sched_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\adaptive_sched_lib.dir\src\scheduler
+  TARGET_SUPPORT_DIR = CMakeFiles\adaptive_sched_lib.dir
+
+build CMakeFiles/adaptive_sched_lib.dir/src/scheduler/sjf.cpp.obj: CXX_COMPILER__adaptive_sched_lib_unscanned_Debug C$:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/src/scheduler/sjf.cpp || cmake_object_order_depends_target_adaptive_sched_lib
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\adaptive_sched_lib.dir\src\scheduler\sjf.cpp.obj.d
+  FLAGS = -g -std=c++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -g -O0 -fsanitize=address,undefined
+  INCLUDES = -IC:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/include
+  OBJECT_DIR = CMakeFiles\adaptive_sched_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\adaptive_sched_lib.dir\src\scheduler
+  TARGET_SUPPORT_DIR = CMakeFiles\adaptive_sched_lib.dir
+
+build CMakeFiles/adaptive_sched_lib.dir/src/scheduler/rr.cpp.obj: CXX_COMPILER__adaptive_sched_lib_unscanned_Debug C$:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/src/scheduler/rr.cpp || cmake_object_order_depends_target_adaptive_sched_lib
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\adaptive_sched_lib.dir\src\scheduler\rr.cpp.obj.d
+  FLAGS = -g -std=c++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -g -O0 -fsanitize=address,undefined
+  INCLUDES = -IC:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/include
+  OBJECT_DIR = CMakeFiles\adaptive_sched_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\adaptive_sched_lib.dir\src\scheduler
+  TARGET_SUPPORT_DIR = CMakeFiles\adaptive_sched_lib.dir
+
+build CMakeFiles/adaptive_sched_lib.dir/src/scheduler/priority.cpp.obj: CXX_COMPILER__adaptive_sched_lib_unscanned_Debug C$:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/src/scheduler/priority.cpp || cmake_object_order_depends_target_adaptive_sched_lib
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\adaptive_sched_lib.dir\src\scheduler\priority.cpp.obj.d
+  FLAGS = -g -std=c++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -g -O0 -fsanitize=address,undefined
+  INCLUDES = -IC:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/include
+  OBJECT_DIR = CMakeFiles\adaptive_sched_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\adaptive_sched_lib.dir\src\scheduler
+  TARGET_SUPPORT_DIR = CMakeFiles\adaptive_sched_lib.dir
+
+build CMakeFiles/adaptive_sched_lib.dir/src/scheduler/mlfq.cpp.obj: CXX_COMPILER__adaptive_sched_lib_unscanned_Debug C$:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/src/scheduler/mlfq.cpp || cmake_object_order_depends_target_adaptive_sched_lib
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\adaptive_sched_lib.dir\src\scheduler\mlfq.cpp.obj.d
+  FLAGS = -g -std=c++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -g -O0 -fsanitize=address,undefined
+  INCLUDES = -IC:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/include
+  OBJECT_DIR = CMakeFiles\adaptive_sched_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\adaptive_sched_lib.dir\src\scheduler
+  TARGET_SUPPORT_DIR = CMakeFiles\adaptive_sched_lib.dir
+
+build CMakeFiles/adaptive_sched_lib.dir/src/scheduler/adaptive.cpp.obj: CXX_COMPILER__adaptive_sched_lib_unscanned_Debug C$:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/src/scheduler/adaptive.cpp || cmake_object_order_depends_target_adaptive_sched_lib
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\adaptive_sched_lib.dir\src\scheduler\adaptive.cpp.obj.d
+  FLAGS = -g -std=c++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -g -O0 -fsanitize=address,undefined
+  INCLUDES = -IC:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/include
+  OBJECT_DIR = CMakeFiles\adaptive_sched_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\adaptive_sched_lib.dir\src\scheduler
+  TARGET_SUPPORT_DIR = CMakeFiles\adaptive_sched_lib.dir
+
+build CMakeFiles/adaptive_sched_lib.dir/src/execution/cpu.cpp.obj: CXX_COMPILER__adaptive_sched_lib_unscanned_Debug C$:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/src/execution/cpu.cpp || cmake_object_order_depends_target_adaptive_sched_lib
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\adaptive_sched_lib.dir\src\execution\cpu.cpp.obj.d
+  FLAGS = -g -std=c++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -g -O0 -fsanitize=address,undefined
+  INCLUDES = -IC:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/include
+  OBJECT_DIR = CMakeFiles\adaptive_sched_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\adaptive_sched_lib.dir\src\execution
+  TARGET_SUPPORT_DIR = CMakeFiles\adaptive_sched_lib.dir
+
+build CMakeFiles/adaptive_sched_lib.dir/src/metrics/statistics.cpp.obj: CXX_COMPILER__adaptive_sched_lib_unscanned_Debug C$:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/src/metrics/statistics.cpp || cmake_object_order_depends_target_adaptive_sched_lib
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\adaptive_sched_lib.dir\src\metrics\statistics.cpp.obj.d
+  FLAGS = -g -std=c++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -g -O0 -fsanitize=address,undefined
+  INCLUDES = -IC:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/include
+  OBJECT_DIR = CMakeFiles\adaptive_sched_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\adaptive_sched_lib.dir\src\metrics
+  TARGET_SUPPORT_DIR = CMakeFiles\adaptive_sched_lib.dir
+
+build CMakeFiles/adaptive_sched_lib.dir/src/simulation/workload.cpp.obj: CXX_COMPILER__adaptive_sched_lib_unscanned_Debug C$:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/src/simulation/workload.cpp || cmake_object_order_depends_target_adaptive_sched_lib
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\adaptive_sched_lib.dir\src\simulation\workload.cpp.obj.d
+  FLAGS = -g -std=c++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -g -O0 -fsanitize=address,undefined
+  INCLUDES = -IC:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/include
+  OBJECT_DIR = CMakeFiles\adaptive_sched_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\adaptive_sched_lib.dir\src\simulation
+  TARGET_SUPPORT_DIR = CMakeFiles\adaptive_sched_lib.dir
+
+build CMakeFiles/adaptive_sched_lib.dir/src/simulation/process_generator.cpp.obj: CXX_COMPILER__adaptive_sched_lib_unscanned_Debug C$:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/src/simulation/process_generator.cpp || cmake_object_order_depends_target_adaptive_sched_lib
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\adaptive_sched_lib.dir\src\simulation\process_generator.cpp.obj.d
+  FLAGS = -g -std=c++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -g -O0 -fsanitize=address,undefined
+  INCLUDES = -IC:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/include
+  OBJECT_DIR = CMakeFiles\adaptive_sched_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\adaptive_sched_lib.dir\src\simulation
+  TARGET_SUPPORT_DIR = CMakeFiles\adaptive_sched_lib.dir
+
+build CMakeFiles/adaptive_sched_lib.dir/src/simulation/simulation_controller.cpp.obj: CXX_COMPILER__adaptive_sched_lib_unscanned_Debug C$:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/src/simulation/simulation_controller.cpp || cmake_object_order_depends_target_adaptive_sched_lib
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\adaptive_sched_lib.dir\src\simulation\simulation_controller.cpp.obj.d
+  FLAGS = -g -std=c++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -g -O0 -fsanitize=address,undefined
+  INCLUDES = -IC:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/include
+  OBJECT_DIR = CMakeFiles\adaptive_sched_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\adaptive_sched_lib.dir\src\simulation
+  TARGET_SUPPORT_DIR = CMakeFiles\adaptive_sched_lib.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target adaptive_sched_lib
+
+
+#############################################
+# Link the static library libadaptive_sched_lib.a
+
+build libadaptive_sched_lib.a: CXX_STATIC_LIBRARY_LINKER__adaptive_sched_lib_Debug CMakeFiles/adaptive_sched_lib.dir/src/core/clock.cpp.obj CMakeFiles/adaptive_sched_lib.dir/src/core/process.cpp.obj CMakeFiles/adaptive_sched_lib.dir/src/core/ready_queue.cpp.obj CMakeFiles/adaptive_sched_lib.dir/src/scheduler/scheduler.cpp.obj CMakeFiles/adaptive_sched_lib.dir/src/scheduler/fcfs.cpp.obj CMakeFiles/adaptive_sched_lib.dir/src/scheduler/sjf.cpp.obj CMakeFiles/adaptive_sched_lib.dir/src/scheduler/rr.cpp.obj CMakeFiles/adaptive_sched_lib.dir/src/scheduler/priority.cpp.obj CMakeFiles/adaptive_sched_lib.dir/src/scheduler/mlfq.cpp.obj CMakeFiles/adaptive_sched_lib.dir/src/scheduler/adaptive.cpp.obj CMakeFiles/adaptive_sched_lib.dir/src/execution/cpu.cpp.obj CMakeFiles/adaptive_sched_lib.dir/src/metrics/statistics.cpp.obj CMakeFiles/adaptive_sched_lib.dir/src/simulation/workload.cpp.obj CMakeFiles/adaptive_sched_lib.dir/src/simulation/process_generator.cpp.obj CMakeFiles/adaptive_sched_lib.dir/src/simulation/simulation_controller.cpp.obj
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles\adaptive_sched_lib.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = libadaptive_sched_lib.a
+  TARGET_PDB = adaptive_sched_lib.a.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\adaptive_sched_lib.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target adaptive_sched
+
+
+#############################################
+# Order-only phony target for adaptive_sched
+
+build cmake_object_order_depends_target_adaptive_sched: phony || cmake_object_order_depends_target_adaptive_sched_lib
+
+build CMakeFiles/adaptive_sched.dir/main.cpp.obj: CXX_COMPILER__adaptive_sched_unscanned_Debug C$:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/main.cpp || cmake_object_order_depends_target_adaptive_sched
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\adaptive_sched.dir\main.cpp.obj.d
+  FLAGS = -g -std=c++17 -Wall -Wextra -Wpedantic -Wno-unused-parameter -g -O0 -fsanitize=address,undefined
+  INCLUDES = -IC:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/include
+  OBJECT_DIR = CMakeFiles\adaptive_sched.dir
+  OBJECT_FILE_DIR = CMakeFiles\adaptive_sched.dir
+  TARGET_SUPPORT_DIR = CMakeFiles\adaptive_sched.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target adaptive_sched
+
+
+#############################################
+# Link the executable adaptive_sched.exe
+
+build adaptive_sched.exe: CXX_EXECUTABLE_LINKER__adaptive_sched_Debug CMakeFiles/adaptive_sched.dir/main.cpp.obj | libadaptive_sched_lib.a || libadaptive_sched_lib.a
+  CONFIG = Debug
+  FLAGS = -g
+  LINK_FLAGS = -fsanitize=address,undefined
+  LINK_LIBRARIES = libadaptive_sched_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\adaptive_sched.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = adaptive_sched.exe
+  TARGET_IMPLIB = libadaptive_sched.dll.a
+  TARGET_PDB = adaptive_sched.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\adaptive_sched.dir
+
 
 #############################################
 # Utility command for edit_cache
@@ -63,8 +264,54 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Rudraksh\OneDrive\Desktop\AdaptiveSched\build && C:\mingw64\bin\cmake.exe -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Rudraksh\OneDrive\Desktop\AdaptiveSched\build && C:\mingw64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Rudraksh\OneDrive\Desktop\AdaptiveSched\build && C:\mingw64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
 # =============================================================================
 # Target aliases.
+
+build adaptive_sched: phony adaptive_sched.exe
+
+build adaptive_sched_lib: phony libadaptive_sched_lib.a
 
 # =============================================================================
 # Folder targets.
@@ -74,7 +321,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: C:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/build
 
-build all: phony
+build all: phony libadaptive_sched_lib.a adaptive_sched.exe
 
 # =============================================================================
 # Built-in targets
@@ -83,14 +330,14 @@ build all: phony
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja C$:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/build/cmake_install.cmake: RERUN_CMAKE | C$:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/CMakeLists.txt C$:/mingw64/share/cmake-4.2/Modules/CMakeCCompiler.cmake.in C$:/mingw64/share/cmake-4.2/Modules/CMakeCCompilerABI.c C$:/mingw64/share/cmake-4.2/Modules/CMakeCInformation.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeCXXCompiler.cmake.in C$:/mingw64/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp C$:/mingw64/share/cmake-4.2/Modules/CMakeCXXInformation.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeCommonLanguageInclude.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeCompilerIdDetection.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeDetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeDetermineCompilerSupport.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeDetermineRCCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeGenericSystem.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeInitializeConfigs.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeLanguageInformation.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeNinjaFindMake.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeParseImplicitLinkInfo.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeParseLibraryArchitecture.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeRCCompiler.cmake.in C$:/mingw64/share/cmake-4.2/Modules/CMakeRCInformation.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeSystem.cmake.in C$:/mingw64/share/cmake-4.2/Modules/CMakeSystemSpecificInformation.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeSystemSpecificInitialize.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeTestCompilerCommon.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeTestRCCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/Diab-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/GNU-C.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/GNU-CXX-CXXImportStd.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/GNU-CXX.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/GNU.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/Renesas-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/TI-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/TIClang-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Internal/CMakeCLinkerInformation.cmake C$:/mingw64/share/cmake-4.2/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/mingw64/share/cmake-4.2/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/mingw64/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake C$:/mingw64/share/cmake-4.2/Modules/Internal/CMakeInspectCLinker.cmake C$:/mingw64/share/cmake-4.2/Modules/Internal/CMakeInspectCXXLinker.cmake C$:/mingw64/share/cmake-4.2/Modules/Internal/FeatureTesting.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Linker/GNU.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Linker/Windows-C.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Linker/Windows-CXX.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Linker/Windows-GNU.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows-Determine-CXX.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows-GNU-C.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows-GNU-CXX.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows-GNU.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows-Initialize.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows-windres.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.2.3/CMakeCCompiler.cmake CMakeFiles/4.2.3/CMakeCXXCompiler.cmake CMakeFiles/4.2.3/CMakeRCCompiler.cmake CMakeFiles/4.2.3/CMakeSystem.cmake
+build build.ninja C$:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/build/cmake_install.cmake: RERUN_CMAKE | C$:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/CMakeLists.txt C$:/mingw64/share/cmake-4.2/Modules/CMakeCXXInformation.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeCommonLanguageInclude.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeGenericSystem.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeInitializeConfigs.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeLanguageInformation.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeRCInformation.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeSystemSpecificInformation.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeSystemSpecificInitialize.cmake C$:/mingw64/share/cmake-4.2/Modules/CheckCXXSourceCompiles.cmake C$:/mingw64/share/cmake-4.2/Modules/CheckIncludeFileCXX.cmake C$:/mingw64/share/cmake-4.2/Modules/CheckLibraryExists.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/GNU-CXX.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/GNU.cmake C$:/mingw64/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake C$:/mingw64/share/cmake-4.2/Modules/FindPackageMessage.cmake C$:/mingw64/share/cmake-4.2/Modules/FindThreads.cmake C$:/mingw64/share/cmake-4.2/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/mingw64/share/cmake-4.2/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/mingw64/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Linker/GNU.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Linker/Windows-CXX.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Linker/Windows-GNU.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows-GNU-CXX.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows-GNU.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows-Initialize.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows-windres.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.2.3/CMakeCXXCompiler.cmake CMakeFiles/4.2.3/CMakeRCCompiler.cmake CMakeFiles/4.2.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/CMakeLists.txt C$:/mingw64/share/cmake-4.2/Modules/CMakeCCompiler.cmake.in C$:/mingw64/share/cmake-4.2/Modules/CMakeCCompilerABI.c C$:/mingw64/share/cmake-4.2/Modules/CMakeCInformation.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeCXXCompiler.cmake.in C$:/mingw64/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp C$:/mingw64/share/cmake-4.2/Modules/CMakeCXXInformation.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeCommonLanguageInclude.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeCompilerIdDetection.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeDetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeDetermineCompilerSupport.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeDetermineRCCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeGenericSystem.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeInitializeConfigs.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeLanguageInformation.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeNinjaFindMake.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeParseImplicitLinkInfo.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeParseLibraryArchitecture.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeRCCompiler.cmake.in C$:/mingw64/share/cmake-4.2/Modules/CMakeRCInformation.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeSystem.cmake.in C$:/mingw64/share/cmake-4.2/Modules/CMakeSystemSpecificInformation.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeSystemSpecificInitialize.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeTestCompilerCommon.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeTestRCCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/Diab-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/GNU-C.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/GNU-CXX-CXXImportStd.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/GNU-CXX.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/GNU.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/Renesas-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/TI-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/TIClang-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/mingw64/share/cmake-4.2/Modules/Internal/CMakeCLinkerInformation.cmake C$:/mingw64/share/cmake-4.2/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/mingw64/share/cmake-4.2/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/mingw64/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake C$:/mingw64/share/cmake-4.2/Modules/Internal/CMakeInspectCLinker.cmake C$:/mingw64/share/cmake-4.2/Modules/Internal/CMakeInspectCXXLinker.cmake C$:/mingw64/share/cmake-4.2/Modules/Internal/FeatureTesting.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Linker/GNU.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Linker/Windows-C.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Linker/Windows-CXX.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Linker/Windows-GNU.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows-Determine-CXX.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows-GNU-C.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows-GNU-CXX.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows-GNU.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows-Initialize.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows-windres.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.2.3/CMakeCCompiler.cmake CMakeFiles/4.2.3/CMakeCXXCompiler.cmake CMakeFiles/4.2.3/CMakeRCCompiler.cmake CMakeFiles/4.2.3/CMakeSystem.cmake: phony
+build C$:/Users/Rudraksh/OneDrive/Desktop/AdaptiveSched/CMakeLists.txt C$:/mingw64/share/cmake-4.2/Modules/CMakeCXXInformation.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeCommonLanguageInclude.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeGenericSystem.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeInitializeConfigs.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeLanguageInformation.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeRCInformation.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeSystemSpecificInformation.cmake C$:/mingw64/share/cmake-4.2/Modules/CMakeSystemSpecificInitialize.cmake C$:/mingw64/share/cmake-4.2/Modules/CheckCXXSourceCompiles.cmake C$:/mingw64/share/cmake-4.2/Modules/CheckIncludeFileCXX.cmake C$:/mingw64/share/cmake-4.2/Modules/CheckLibraryExists.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/GNU-CXX.cmake C$:/mingw64/share/cmake-4.2/Modules/Compiler/GNU.cmake C$:/mingw64/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake C$:/mingw64/share/cmake-4.2/Modules/FindPackageMessage.cmake C$:/mingw64/share/cmake-4.2/Modules/FindThreads.cmake C$:/mingw64/share/cmake-4.2/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/mingw64/share/cmake-4.2/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/mingw64/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Linker/GNU.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Linker/Windows-CXX.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Linker/Windows-GNU.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows-GNU-CXX.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows-GNU.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows-Initialize.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows-windres.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/Windows.cmake C$:/mingw64/share/cmake-4.2/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.2.3/CMakeCXXCompiler.cmake CMakeFiles/4.2.3/CMakeRCCompiler.cmake CMakeFiles/4.2.3/CMakeSystem.cmake: phony
 
 
 #############################################
