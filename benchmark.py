@@ -23,59 +23,111 @@ OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "output")
 # ------------------------------------------------------------------
 
 def generate_large_workload(name, n_processes, seed=42):
-    """Generate a large CSV workload with a realistic mix of process types."""
+    """
+    Generate a phased workload that showcases adaptive scheduling.
+    
+    Phase 1: Interactive burst (adaptive should stay on MLFQ)
+    Phase 2: CPU-bound spike (adaptive should switch to FCFS)
+    Phase 3: Mixed with starvation risk (adaptive should switch to Priority)
+    Phase 4: Return to interactive (adaptive should switch back to MLFQ)
+    """
     rng = random.Random(seed)
     os.makedirs(WORKLOADS_DIR, exist_ok=True)
     path = os.path.join(WORKLOADS_DIR, f"{name}.csv")
 
-    process_types = [
-        # (burst_mean, burst_std, burst_min, burst_max, interactive_prob, pri_min, pri_max, weight)
-        ("interactive",  3,  2,  1,  8,  0.9, 0,  4,  0.25),  # UI / shell
-        ("cpu_bound",   25, 10, 10, 80,  0.0, 4,  8,  0.25),  # compilers, ML
-        ("batch",       40, 15, 20, 100, 0.0, 5, 10,  0.15),  # batch jobs
-        ("daemon",       8,  4,  2, 20,  0.1, 2,  6,  0.20),  # background daemons
-        ("burst",       12,  6,  3, 35,  0.3, 1,  8,  0.15),  # mixed bursters
-    ]
-
-    weights = [t[-1] for t in process_types]
-    total_w = sum(weights)
-    norm_weights = [w / total_w for w in weights]
-    cumulative = []
-    acc = 0
-    for w in norm_weights:
-        acc += w
-        cumulative.append(acc)
-
-    def pick_type():
-        r = rng.random()
-        for i, c in enumerate(cumulative):
-            if r <= c:
-                return process_types[i]
-        return process_types[-1]
-
     rows = []
+    pid = 1
     arrival = 0
-    for pid in range(1, n_processes + 1):
+    
+    # =====================================================================
+    # PHASE 1: Interactive workload (ticks 0-800)
+    # 150 processes, short bursts, high priority, marked interactive
+    # Expected adaptive behavior: Stay on MLFQ (default)
+    # =====================================================================
+    phase1_count = int(n_processes * 0.30)  # 30% of total
+    for _ in range(phase1_count):
+        inter_arrival = max(1, int(rng.expovariate(0.5)))
+        arrival += inter_arrival
+        burst = rng.randint(2, 8)
+        priority = rng.randint(0, 3)
+        interactive = 1
+        rows.append((pid, f"interactive_{pid}", arrival, burst, priority, interactive))
+        pid += 1
+    
+    print(f"  Phase 1: Interactive processes (PIDs 1-{pid-1})")
+    print(f"    Ended at tick {arrival}")
+    
+    # =====================================================================
+    # PHASE 2: CPU-bound spike (dramatic change)
+    # 175 processes, long bursts, no interactivity
+    # Expected adaptive behavior: Switch from MLFQ to FCFS
+    # =====================================================================
+    arrival += 20  # slight gap between phases
+    phase2_start = arrival
+    phase2_count = int(n_processes * 0.35)  # 35% of total
+    for _ in range(phase2_count):
         inter_arrival = max(1, int(rng.expovariate(0.4)))
         arrival += inter_arrival
-
-        t = pick_type()
-        _, bmean, bstd, bmin, bmax, iprob, pmin, pmax, _ = t
-
-        burst = int(max(bmin, min(bmax, rng.gauss(bmean, bstd))))
-        priority = rng.randint(pmin, pmax)
-        interactive = 1 if rng.random() < iprob else 0
-        name_prefix = t[0]
-        pname = f"{name_prefix}_{pid}"
-
-        rows.append((pid, pname, arrival, burst, priority, interactive))
-
+        burst = rng.randint(40, 100)  # long bursts
+        priority = rng.randint(4, 8)
+        interactive = 0
+        rows.append((pid, f"cpu_bound_{pid}", arrival, burst, priority, interactive))
+        pid += 1
+    
+    print(f"  Phase 2: CPU-bound processes (PIDs {phase1_count+1}-{pid-1})")
+    print(f"    Started at tick {phase2_start}, ended at tick {arrival}")
+    
+    # =====================================================================
+    # PHASE 3: Mixed workload with starvation potential
+    # 100 processes, wide range of priorities and burst sizes
+    # Expected adaptive behavior: Consider Priority scheduler if starvation detected
+    # =====================================================================
+    arrival += 20
+    phase3_start = arrival
+    phase3_count = int(n_processes * 0.20)  # 20% of total
+    for _ in range(phase3_count):
+        inter_arrival = max(1, int(rng.expovariate(0.5)))
+        arrival += inter_arrival
+        # Mix of short and long
+        if rng.random() < 0.3:
+            burst = rng.randint(2, 10)  # short
+        else:
+            burst = rng.randint(30, 80)  # long
+        priority = rng.randint(0, 9)  # wide priority range
+        interactive = 1 if rng.random() < 0.3 else 0
+        rows.append((pid, f"mixed_{pid}", arrival, burst, priority, interactive))
+        pid += 1
+    
+    print(f"  Phase 3: Mixed workload (PIDs {phase1_count+phase2_count+1}-{pid-1})")
+    print(f"    Started at tick {phase3_start}, ended at tick {arrival}")
+    
+    # =====================================================================
+    # PHASE 4: Return to interactive workload
+    # 75 processes, short bursts again
+    # Expected adaptive behavior: Switch back to MLFQ
+    # =====================================================================
+    arrival += 20
+    phase4_start = arrival
+    phase4_count = n_processes - (phase1_count + phase2_count + phase3_count)
+    for _ in range(phase4_count):
+        inter_arrival = max(1, int(rng.expovariate(0.6)))
+        arrival += inter_arrival
+        burst = rng.randint(1, 6)
+        priority = rng.randint(0, 3)
+        interactive = 1
+        rows.append((pid, f"interactive2_{pid}", arrival, burst, priority, interactive))
+        pid += 1
+    
+    print(f"  Phase 4: Interactive again (PIDs {phase1_count+phase2_count+phase3_count+1}-{pid-1})")
+    print(f"    Started at tick {phase4_start}, ended at tick {arrival}")
+    
+    # Write to CSV
     with open(path, "w", newline="") as f:
         writer = csv.writer(f)
         writer.writerow(["pid", "name", "arrival", "burst", "priority", "interactive"])
         writer.writerows(rows)
 
-    print(f"  Generated {n_processes} processes → {path}")
+    print(f"  Total: {len(rows)} processes → {path}")
     return path
 
 

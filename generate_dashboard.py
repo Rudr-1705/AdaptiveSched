@@ -482,6 +482,6 @@ tbl.innerHTML=h+'</tbody>';
 </body>
 </html>"""
 
-with open(OUT_PATH, 'w') as f:
+with open(OUT_PATH, "w", encoding="utf-8") as f:
     f.write(HTML)
 print(f"Dashboard written → {OUT_PATH}")
